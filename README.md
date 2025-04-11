@@ -4,7 +4,7 @@ Welcome to the **Brew & Bloom** café landing page — a modern, animated landin
 
 ## 🌟 Live Demo
 
-👉 [View Demo]([#brewandbloom.netlify.app](https://brewandbloom.netlify.app/))
+👉 [View Demo]((https://brewandbloom.netlify.app/))
 
 ## ✨ Features
 
