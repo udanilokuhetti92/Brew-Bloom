@@ -18,7 +18,7 @@ Welcome to the **Brew & Bloom** café landing page — a modern, animated landin
 
 - HTML5
 - CSS3
-- JavaScript (Vanilla)
+- JavaScript
 - No frameworks – clean and simple!
 
 ## ✨ Clone the Project
