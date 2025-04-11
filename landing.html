@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="landing.css">
+        <title>Brew & Bloom</title>
+        <link rel="icon" href="favicon.png" type="image/png">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="header">
+            <div class="logo">
+                <div class="img">
+                    <img src="brew-bloom.png" alt="Brew & Bloom" />
+                </div>
+                <div class="text">
+                    <p>Brew & Bloom</p>
+                </div>
+            </div>
+            <div class="button">
+                <a href="#about" class="nav">About</a>
+                <a href="#story" class="nav">Our Story</a>
+                <a href="#contact" class="nav">Contact</a>
+                <a href="#">Menu</a>
+            </div>
+        </div>
+
+        <div class="hero">
+            <img src="hero.jpg" alt="Brew & Bloom" style="width: 100%;" />
+            <div class="center" style="color:#3B2F2F;">
+                <h1 id="typewriter"></h1>
+                <div class="button2">
+                    <a href="#gallery" style="font-family: 'Archivo', sans-serif;">Explore Gallery</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="body">
+            <div id="about" class="fade-in">
+                <div class="about-text">
+                    <h3>About Us</h3>
+                    <p>
+                        Welcome to Brew & Bloom, where every cup is brewed with passion and care. We believe that coffee is more than just a drink — it’s an experience. 
+                        Whether you’re stopping by for a quick caffeine boost or lingering to enjoy a warm conversation, we’re here to provide you with the best 
+                        coffee and an inviting atmosphere. Our café is a place for people to connect, relax, and savor the simple pleasures in life.
+                    </p>
+                </div>
+                <div class="about-image">
+                    <img src="about.png" alt="About Us" />
+                </div>
+            </div>
+        </div>  
+        
+        <div class="body2">
+            <div id="story" class="fade-in">
+                <div class="story-text">
+                    <h3>Our Story</h3>
+                    <p>
+                        Our journey began in 2020, when a group of friends who shared a love for coffee decided to bring something special 
+                        to the community. What started as a small dream has now become a thriving neighborhood café, known for its friendly vibe 
+                        and expertly brewed coffee. We’re committed to delivering the finest blends and creating a place where everyone feels 
+                        welcome.
+
+                        At Brew & Bloom, our goal is simple — to craft exceptional coffee and serve it with a side of warmth and kindness. 
+                        From our humble beginnings to where we are today, we’ve always stayed true to the values that matter most to us: 
+                        quality, sustainability, and community.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="gallery-section fade-in" id="gallery">
+            <h3>Our Gallery</h3>
+            <div class="gallery-grid">
+                <img src="gallery1.jpg" alt="Coffee Image">
+                <img src="gallery2.jpg" alt="Interior Image">
+                <img src="gallery3.jpg" alt="Latte Art">
+                <img src="gallery4.jpeg" alt="Pastries">
+                <img src="gallery5.jpg" alt="Barista at Work">
+                <img src="gallery6.jpg" alt="Cozy Corner">
+            </div>
+        </div>    
+        
+        <div id="contact" class="contact-section fade-in">
+            <h3>Contact Us</h3>
+            <p>We’d love to hear from you! Whether it’s feedback, questions, or just a friendly hello, feel free to reach out.</p>
+        
+            <div class="contact-details">
+                <div class="contact-info">
+                    <p><strong>📍 Address:</strong> Brew Place, Colombo</p>
+                    <p><strong>📞 Phone:</strong> +94 77 xxxx xxx</p>
+                    <p><strong>📧 Email:</strong> brewandbloom@gmail.com</p>
+                    <p><strong>🕒 Hours:</strong> Mon – Sun: 8:00 AM – 8:00 PM</p>
+                </div>
+        
+                <form class="contact-form" id="contactForm">
+                    <input type="text" placeholder="Your Name" required />
+                    <input type="email" placeholder="Your Email" required />
+                    <textarea placeholder="Your Message" rows="4" required></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+
+                <!-- Message display area -->
+                <p id="confirmationMsg" style="display:none; color: green; margin-top: 10px;">Message sent successfully!</p>
+            </div>
+        </div> 
+        
+        <footer class="footer">
+            <div class="footer-content">
+                <p>&copy; 2025 Brew & Bloom. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="#about">About</a>
+                    <a href="#story">Our Story</a>
+                    <a href="#gallery">Gallery</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </div>
+        </footer> 
+
+        <script src="landing.js"></script>
+    </body>
+</html>

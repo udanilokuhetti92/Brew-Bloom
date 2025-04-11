@@ -1,0 +1,115 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    overflow: hidden; /* Prevents scrolling */
+}
+
+body {
+    background-image: url("brew-bloom.png");
+    background-size: 450px;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-color: #fffbeb;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+    padding-top: 50px;
+}
+
+.spinnerContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 180px; 
+}
+
+.spinner {
+    width: 56px;
+    height: 56px;
+    display: grid;
+    border: 4px solid #0000;
+    border-radius: 50%;
+    border-right-color: #3B2F2F;
+    animation: tri-spinner 1s infinite linear;
+}
+
+.spinner::before,
+.spinner::after {
+    content: "";
+    grid-area: 1/1;
+    margin: 2px;
+    border: inherit;
+    border-radius: 50%;
+    animation: tri-spinner 2s infinite;
+}
+
+.spinner::after {
+    margin: 8px;
+    animation-duration: 3s;
+}
+
+@keyframes tri-spinner {
+    100% {
+        transform: rotate(1turn);
+    }
+}
+
+.loader {
+    color: #6F4F37;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 25px;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+    height: 40px;
+    padding: 10px 10px;
+    display: flex;
+    border-radius: 8px;
+}
+
+.words {
+    overflow: hidden;
+}
+
+.word {
+    display: block;
+    height: 100%;
+    padding-left: 6px;
+    color: #A97142;
+    animation: cycle-words 5s infinite;
+}
+
+@keyframes cycle-words {
+    10% {
+        transform: translateY(-105%);  /* Slightly reduced from -105% */
+    }
+
+    25% {
+        transform: translateY(-90%);  /* Slightly reduced from -100% */
+    }
+
+    35% {
+        transform: translateY(-190%); /* Slightly reduced from -205% */
+    }
+
+    50% {
+        transform: translateY(-185%); /* Slightly reduced from -200% */
+    }
+
+    60% {
+        transform: translateY(-290%); /* Slightly reduced from -305% */
+    }
+
+    75% {
+        transform: translateY(-285%); /* Slightly reduced from -300% */
+    }
+
+    85% {
+        transform: translateY(-390%); /* Slightly reduced from -405% */
+    }
+
+    100% {
+        transform: translateY(-385%); /* Slightly reduced from -400% */
+    }
+}
